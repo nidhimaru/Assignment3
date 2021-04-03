@@ -1,0 +1,61 @@
+{
+    "companyName": "Amazon",
+    "headOffice": "Toronto, Canada",
+    "established": 2007,
+    "active": true,
+    "topProducts": [
+      {
+        "name": "A bean-squeezing stress reliever",
+        "price": "$8.99",
+        "description": "Nothing quite relieves stress like popping a cute little emoji-faced bean out of a pod—right?",
+        "features": [
+          "stress reliever",
+          "time passing thing",
+          "toy for a child"
+        ],
+        "image": "bean-squeezing-stress-reliever.svg"
+      },
+      {
+        "name": "A Nicolas Cage sequin pillowcase",
+        "price": "$24.95",
+        "description": "The only thing better than a festive red sparkly pillowcase is one that morphs into Nicolas Cage's face with the satisfying swipe of your hand.",
+        "features": [
+          "super soft",
+          "washable"
+        ],
+        "image": "nicolas-cage-sequin-pillowcase.svg"
+      },
+      {
+        "name": "Baby hands candles",
+        "price": "$15.00",
+        "description": "If you can get over the natural aversion to lighting a couple of eerily-lifelike baby hands on fire, you're in for a treat with these handmade, pure beeswax candles.",
+        "features": [
+          "pleasant smell",
+          "home-made",
+          "log-lasting"
+        ],
+        "image": "hands-candles.svg"
+      },
+      {
+        "name": "Gardening claws",
+        "price": "$5.49",
+        "description": "Now you can garden like the wild beast you are. Just be sure not to fall into any wild animal traps you may have set back when you were a poor, claw-less human.",
+        "features": [
+          "Thorn protection",
+          "water resistance"
+        ],
+        "image": "gardening-claws.svg"
+      },
+      {
+        "name": "A suture practice kit",
+        "price": "$45.95",
+        "description": "Not quite a game, not quite medical school, this suture training kit will have you fixing up wounds and repairing hems with ease.",
+        "features": [
+          "small sized",
+          "easy to carry"
+         ],
+        "image": "suture-practice-kit.svg"
+      }
+    ]
+  }
+  
