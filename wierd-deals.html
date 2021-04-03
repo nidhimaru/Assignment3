@@ -9,14 +9,33 @@
 </head>
 
 <body>
-
+	<div id="myData"></div>
 	<script>
+		fetch("products.json")
+		.then(function(resp){
+			return resp.jason();
+		})
+		.then (function (data){
+			appendData(data);
+		});
+
+		function appendData(data) {
+			let main = document.getElementById("myData");
+			for (let i = 0; i < data.length; i++) {
+				let div = document.createElement("div");
+				div.innerHtml = 
+				"Name: " + data[i].name + " is of  " + data[i].price + " described as " + 
+				data[i].description + " having features " + data[i].features;
+				main.appendChild(div);
+			}
+		}
+
 		/*Bind the HEADER and the SECTION elements above to variables */
 		let header = document.querySelector('header');
 		let section = document.querySelector('section');
 
 		// Store JSON URL in a variable
-		let requestURL = "";
+		let requestURL = "https://raw.githubusercontent.com/nidhimaru/Assignment3/master/products.json";
 		
 		// Create a new XHR object 
 		let request = new XMLHttpRequest();
