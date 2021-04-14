@@ -4,31 +4,30 @@
 	<meta charset="utf-8" />
 	<title>Object Prototypes | COMP1073 Client-Side JavaScript</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="css/normalize.css" rel="stylesheet" />
-	<link href="css/styles.css" rel="stylesheet" />
+	
 </head>
 
 <body>
 	<div id="myData"></div>
 	<script>
-		fetch("products.json")
-		.then(function(resp){
-			return resp.jason();
-		})
-		.then (function (data){
-			appendData(data);
-		});
+		// fetch("products.json")
+		// .then(function(resp){
+		// 	return json();
+		// })
+		// .then (function (data){
+		// 	appendData(data);
+		// });
 
-		function appendData(data) {
-			let main = document.getElementById("myData");
-			for (let i = 0; i < data.length; i++) {
-				let div = document.createElement("div");
-				div.innerHtml = 
-				"Name: " + data[i].name + " is of  " + data[i].price + " described as " + 
-				data[i].description + " having features " + data[i].features;
-				main.appendChild(div);
-			}
-		}
+		// function appendData(data) {
+		// 	let main = document.getElementById("myData");
+		// 	for (let i = 0; i < data.length; i++) {
+		// 		let div = document.createElement("div");
+		// 		div.innerHtml = 
+		// 		"Name: " + data[i].name + " is of  " + data[i].price + " described as " + 
+		// 		data[i].description + " having features " + data[i].features;
+		// 		main.appendChild(div);
+		// 	}
+		//}
 
 		/*Bind the HEADER and the SECTION elements above to variables */
 		let header = document.querySelector('header');
@@ -58,9 +57,9 @@
 
 		//create populateHeader 
 		function populateHeader(jsonObj) {
-			let headerH1 = document.createElement("h1");
-			headerH1.textContent = jsonObj ["companyName"];
-			header.appendChild(headerH1);
+			let headerh1 = document.createElement("h1");
+			headerh1.textContent = jsonObj ["companyName"];
+			header.appendChild(headerh1);
 			let headerPara = document.createElement("p");
 			headerPara.textContent = jsonObj ["headOffice"];
 			header.appendChild(headerPara);
